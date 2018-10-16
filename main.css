@@ -1,0 +1,51 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    overflow: hidden; /*  Disable scrollbars */
+    display: block;  /* No floating content on sides */
+}
+
+*{
+    margin:0;
+    text-align:center;
+}
+
+h1{
+    line-height: 200px;
+    font-size: 160px;
+    letter-spacing: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: lighter;
+    cursor: default;
+}
+
+#float{
+    position: absolute;
+    color:white;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: default;
+    
+}
+
+#flip{
+    position: absolute;
+    color:white;
+    top:10%;
+    left:96%;
+    font-weight:1000;
+    z-index: 1;
+    font-size:17px;
+    cursor: pointer;
+    width: 3px;
+    height: 17px;
+    margin-left: 19px;
+    margin-top: 12px;
+    background-color: #fff;
+    
+}
+

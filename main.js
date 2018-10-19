@@ -117,12 +117,10 @@ Matter.Events.on(mConstraint,'mousedown',function(event){
       if(mConstraint.body.label != null){
         a = mConstraint.body;
         a.force = {x:0,y:-17.5};
-  
         if(a.label.includes("squarelink")){
           window.open('https://www.google.com', '_blank');
           mConstraint.body = null;
         }
-        
       }
     }
 });

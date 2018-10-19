@@ -39,10 +39,6 @@ function flipMe() {
   flipCount += 90
 };
 
-
-
-
-
 var walls = [
   Matter.Bodies.rectangle(window.innerWidth/2, 0, 4000, 50, { isStatic: true,render: {
     fillStyle: 'transparent',} }),
@@ -65,8 +61,6 @@ Matter.World.add(world, [walls[1],walls[2],walls[3]
 setTimeout(function(){Matter.World.add(world,walls[0]);}, 4000);
 Matter.Engine.run(engine);
 Matter.Render.run(render);
-
-
 
 function testFunc() {
     Matter.Body.setPosition(walls[2], { x: window.innerWidth, y: window.innerHeight / 2 });
@@ -117,16 +111,17 @@ Matter.World.add(world,mConstraint);
 
 Matter.Events.on(mConstraint,'mousedown',function(event){
     if(mConstraint.body == null){
-      console.log('null');
+      console.log(mConstraint);
 
     }else{
       if(mConstraint.body.label != null){
         a = mConstraint.body;
         a.force = {x:0,y:-17.5};
+  
         if(a.label.includes("squarelink")){
-          window.location.href = a.url
+          window.open('https://www.google.com', '_blank');
+          mConstraint.body = null;
         }
-        console.log(a.label)
         
       }
     }

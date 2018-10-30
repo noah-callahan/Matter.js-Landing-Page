@@ -117,6 +117,7 @@ Matter.Events.on(mConstraint,'mousedown',function(event){
       if(mConstraint.body.label != null){
         a = mConstraint.body;
         a.force = {x:0,y:-17.5};
+        console.log(a)
         if(a.label.includes("squarelink")){
           window.open('https://www.google.com', '_blank');
           mConstraint.body = null;
@@ -131,7 +132,7 @@ Matter.Events.on(mConstraint, 'mousemove', function(event) {
   list = Matter.Query.point(linkBodies,mousepos)
   if(list.length == 0){
     for(var i = 0;i < linkBodies.length;i++){
-      linkBodies[i].render.sprite.texture = null;
+      linkBodies[i].render.sprite.texture = "images/base.png";
       linkBodies[i].render.fillStyle="transparent";
     }
     // if(returnColor != null){

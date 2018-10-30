@@ -13,6 +13,9 @@ var blink1 = Matter.Bodies.rectangle(window.innerWidth/1.5, -1300, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
@@ -28,6 +31,9 @@ var blink2 = Matter.Bodies.rectangle(window.innerWidth/2, -1500, 100,100, {
     fillStyle: 'transparent',
     strokeStyle: '#424248',
     lineWidth: 2,
+    sprite:{
+      texture:'images/base.png'
+    },
   }, 
 });
 
@@ -43,6 +49,9 @@ var blink3 = Matter.Bodies.rectangle(window.innerWidth/3, -1400, 100,100, {
     fillStyle: 'transparent',
     strokeStyle: '#424248',
     lineWidth: 2,
+    sprite:{
+      texture:'images/base.png'
+    },
   }, 
 });
 
@@ -58,6 +67,9 @@ var blink4 = Matter.Bodies.rectangle(window.innerWidth - 110, -1500, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
@@ -73,6 +85,9 @@ var blink4 = Matter.Bodies.rectangle(window.innerWidth - 110, -1500, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
@@ -88,6 +103,9 @@ var blink4 = Matter.Bodies.rectangle(window.innerWidth - 110, -1500, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
@@ -103,6 +121,9 @@ var blink4 = Matter.Bodies.rectangle(window.innerWidth - 110, -1500, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
@@ -118,6 +139,9 @@ var blink4 = Matter.Bodies.rectangle(window.innerWidth - 110, -1500, 100,100, {
       fillStyle: 'transparent',
       strokeStyle: '#424248',
       lineWidth: 2,
+      sprite:{
+        texture:'images/base.png'
+      },
     }, 
   });
 
